@@ -11,10 +11,12 @@ class ArticleController extends Controller
     //
     public function index()
     {
+        /*
         $articles = DB::table('articles')
             ->select('id', 'body', 'title')
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(5);*/
+        $articles = Article::select('id', 'title')->orderBy('id', 'desc')->paginate(5);
         return view('welcome', ['articles' => $articles]);
     }
 
