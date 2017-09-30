@@ -90,6 +90,22 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+
+                @foreach ($articles as $article)
+                    <li style="margin: 50px 0;">
+                        <div class="title">
+                            <a href="{{ url('article/'.$article->id) }}">
+                                <h4>{{ $article->title }}</h4>
+                            </a>
+                        </div>
+                        <div class="body">
+                            <p>{{ $article->body }}</p>
+                        </div>
+                    </li>
+                @endforeach
+
+
+                {{ $articles->links() }}
         </div>
     </body>
 </html>
