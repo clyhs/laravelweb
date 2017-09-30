@@ -32,13 +32,7 @@ PUSHER_APP_ID=
 PUSHER_APP_KEY=
 PUSHER_APP_SECRET=
 
-API_STANDARDS_TREE=vnd // 环境
-API_SUBTYPE=myapp // 子类型
-API_PREFIX=api // 前缀
-API_DOMAIN=api.myapp.com //子域名  （前缀和子域名只能存在一个）可选
-API_VERSION=v1 // 版本
-API_NAME=My API // 名字（使用API Blueprint命令才会用到）
-API_CONDITIONAL_REQUEST=false // 带条件的请求
-API_STRICT=false // Strict模式
-API_DEFAULT_FORMAT=json // 响应格式
-API_DEBUG=true // 调试模式
+API_STANDARDS_TREE=vnd
+API_SUBTYPE=emall
+API_PREFIX=api
+API_VERSION=v1
