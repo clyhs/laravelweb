@@ -19,7 +19,9 @@ class UserApiController extends BaseController
     {
         $user = User::findOrFail($id);
 
-        return $this->response->array($user->toArray());
+
+
+        return $this->response->array(["code"=>"10000","data"=>$user->toArray()]);
     }
 
     public function index()
