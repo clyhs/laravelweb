@@ -35,6 +35,6 @@ class UserApiController extends BaseController
     {
         $users = User::paginate(25);
 
-        return $this->response->paginator($users, new UserTransformer)->setStatusCode(200);
+        return $this->response->paginator($users, new UserTransformer);
     }
 }
