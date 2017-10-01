@@ -24,6 +24,6 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\Api\V1'], function ($a
     $api->get('user', 'UserController@index');
     $api->get('user2/{id}', 'UserApiController@getUserInfo');
     $api->get('user2/show/{id}', 'UserApiController@show');
-    $api->get('user2/all', 'UserApiController@index');
-    $api->get('user2/page', 'UserApiController@page');
+    $api->get('user2', 'UserApiController@index');
+    $api->get('user2forpage', 'UserApiController@page');
 });

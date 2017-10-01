@@ -24,8 +24,8 @@ class UserApiController extends BaseController
 
     public function index()
     {
-        $users = User::all();
-
+        //$users = User::all();
+        $user = User::all();
         return $this->response->collection($users, new UserTransformer);
     }
 
