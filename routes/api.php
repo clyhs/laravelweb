@@ -30,4 +30,5 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\Api\V1'], function ($a
     $api->post('register', 'Auth\RegisterApiController@register');
 
     $api->post('login', 'Auth\LoginApiController@login');
+    
 });
