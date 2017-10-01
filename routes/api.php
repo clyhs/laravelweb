@@ -27,5 +27,5 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers\Api\V1'], function ($a
     $api->get('user2', 'UserApiController@index');
     $api->get('user2forpage', 'UserApiController@page');
 
-    $api->post('register', 'Auth\RegisterController@register');
+    $api->post('register', 'Auth\RegisterApiController@register');
 });
