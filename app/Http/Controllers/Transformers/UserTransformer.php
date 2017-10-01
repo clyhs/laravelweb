@@ -5,7 +5,7 @@
  * Date: 2017/10/1
  * Time: 9:59
  */
-namespace App\Http\Api\V1\Transformers;
+namespace App\Http\Transformers;
 
 use App\User;
 use Illuminate\Http\Request;
