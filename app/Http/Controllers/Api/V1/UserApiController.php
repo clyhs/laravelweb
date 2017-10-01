@@ -14,4 +14,25 @@ class UserApiController extends BaseController
         $user = User::findOrFail($id);
         return $this->response->item($user, new UserTransformer);
     }
+
+    public function show($id)
+    {
+        $user = User::findOrFail($id);
+
+        return $this->response->array($user->toArray());
+    }
+
+    public function index()
+    {
+        $users = User::all();
+
+        return $this->response->collection($users, new UserTransformer);
+    }
+
+    public function page()
+    {
+        $users = User::paginate(25);
+
+        return $this->response->paginator($users, new UserTransformer)->setStatusCode(200);
+    }
 }
