@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Transformers;
+use App\Http\Controllers\Transformers\UserTransformer;
 
 class UserApiController extends BaseController
 {
