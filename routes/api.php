@@ -22,4 +22,5 @@ $api = app('Dingo\Api\Routing\Router');
 $api->version('v1', ['namespace' => 'App\Http\Controllers\Api\V1'], function ($api) {
     $api->get('user/{id}', 'UserController@show');
     $api->get('user', 'UserController@index');
+    $api->get('user2/{id}', 'UserApiController@getUserInfo');
 });
