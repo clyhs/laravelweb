@@ -9,11 +9,8 @@ namespace App\Http\Controllers\Api\V1\Auth;
 
 use App\User;
 use App\Http\Controllers\Api\V1\BaseController;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
-
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -21,6 +18,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 class LoginApiController extends BaseController{
 
     use AuthenticatesUsers;
+
     public function login(Request $request)
     {
         $user=User::where('name',$request->email)->orwhere('email',$request->email)->firstOrFail();
