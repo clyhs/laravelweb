@@ -37,4 +37,13 @@ class UserApiController extends BaseController
 
         return $this->response->paginator($users, new UserTransformer);
     }
+
+    public function pagefornew()
+    {
+        $users = User::paginate(25);
+
+        $data = $this->response->paginator($users, new UserTransformer);
+
+        return $this->response->array(["meta"=>$data['meta']]);
+    }
 }
