@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a350e4-7f50-4328-851d-06de402146d5" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/UserApiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/V1/UserApiController.php" />
     </list>
     <ignored path="laravelweb.iws" />
@@ -109,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/V1/UserApiController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.65731466">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding>
                 <element signature="e#47#60#0#PHP" expanded="true" />
               </folding>
@@ -852,7 +851,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/V1/UserApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65731466">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="e#47#60#0#PHP" expanded="true" />
           </folding>
