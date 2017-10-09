@@ -44,6 +44,6 @@ class UserApiController extends BaseController
 
         $users = $this->response->paginator($users, new UserTransformer);
 
-        return $users->data;
+        return $users->getData();
     }
 }
